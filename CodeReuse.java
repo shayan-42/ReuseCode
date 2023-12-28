@@ -2,7 +2,7 @@ public class CodeReuse {
     
 
         // Method to sort array in ascending order
-        public void sortAscending(int[] arr) {
+        public static void sortAscending(int[] arr) {
             int n = arr.length;
             for (int i = 0; i < n - 1; i++) {
                 for (int j = 0; j < n - i - 1; j++) {
@@ -17,7 +17,7 @@ public class CodeReuse {
         }
     
         // Method to calculate statistics: max, min, and average
-        public double[] calculateStats(int[] arr) {
+        public static double[] calculateStats(int[] arr) {
             double[] stats = new double[3]; // Array to hold max, min, and average
     
             if (arr.length == 0) {
@@ -57,7 +57,7 @@ public class CodeReuse {
     // Other methods here...
 
     // Method for matrix addition
-    public int[][] matrixAddition(int[][] matrix1, int[][] matrix2, int rows, int columns) {
+    public static int[][] matrixAddition(int[][] matrix1, int[][] matrix2, int rows, int columns) {
         int[][] result = new int[rows][columns];
 
         for (int i = 0; i < rows; i++) {
